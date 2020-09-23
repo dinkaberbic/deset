@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Instana.Tracing.Core/1.1.55": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Instana.Tracing.Api.dll": {},
+          "ref/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll": {},
+          "ref/netstandard2.0/Instana.Tracing.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Instana.Tracing.Api.dll": {},
+          "lib/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll": {},
+          "lib/netstandard2.0/Instana.Tracing.Core.dll": {}
+        }
+      },
+      "Instana.Tracing.Core.Rewriter.Linux/1.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Instana.Tracing.Core": "1.1.55"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/instana_tracing/CoreProfiler.so": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "instana_tracing/CoreProfiler.so"
+          },
+          "contentFiles/any/any/instana_tracing/instrumentation.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "instana_tracing/instrumentation.json"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Instana.Tracing.Core/1.1.55": {
+      "sha512": "uQ7M7Y/Oj1FHYWcVD0261FJL/bwOB8etcFPLEtgLcRtgbxSjv6N2CStiezgvUjrMTbxddWP+bdz/H/JAg35Cew==",
+      "type": "package",
+      "path": "instana.tracing.core/1.1.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "instana.tracing.core.1.1.55.nupkg.sha512",
+        "instana.tracing.core.nuspec",
+        "lib/netstandard2.0/Instana.Tracing.Api.dll",
+        "lib/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll",
+        "lib/netstandard2.0/Instana.Tracing.Core.dll",
+        "ref/netstandard2.0/Instana.Tracing.Api.dll",
+        "ref/netstandard2.0/Instana.Tracing.Core.Instrumentation.dll",
+        "ref/netstandard2.0/Instana.Tracing.Core.dll"
+      ]
+    },
+    "Instana.Tracing.Core.Rewriter.Linux/1.1.3": {
+      "sha512": "KaLv6t39hXbTeKjA43sokVEHfMlWR5PqwTMiAyTFtKqMskULnPZ4AOprXe2P/eSBz8bZCYFVFj3v3a6HzMzT2A==",
+      "type": "package",
+      "path": "instana.tracing.core.rewriter.linux/1.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contentFiles/any/any/instana_tracing/CoreProfiler.so",
+        "contentFiles/any/any/instana_tracing/instrumentation.json",
+        "images/icon.png",
+        "instana.tracing.core.rewriter.linux.1.1.3.nupkg.sha512",
+        "instana.tracing.core.rewriter.linux.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Instana.Tracing.Core.Rewriter.Linux >= 1.1.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\dinka\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\dinka\\Source\\Repos\\myWebApp\\myWebApp.csproj",
+      "projectName": "myWebApp",
+      "projectPath": "C:\\Users\\dinka\\Source\\Repos\\myWebApp\\myWebApp.csproj",
+      "packagesPath": "C:\\Users\\dinka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dinka\\Source\\Repos\\myWebApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\dinka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Instana.Tracing.Core.Rewriter.Linux": {
+            "target": "Package",
+            "version": "[1.1.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

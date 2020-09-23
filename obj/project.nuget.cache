@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "C7mC5ofIqffFd5ddplfT9dVZpe9EamRyFN+0zaAkoL519+e5exxDpm2iZA6hopcuBt57GQUxvEM3VJARaUIWkQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dinka\\Source\\Repos\\myWebApp\\myWebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dinka\\.nuget\\packages\\instana.tracing.core\\1.1.55\\instana.tracing.core.1.1.55.nupkg.sha512",
+    "C:\\Users\\dinka\\.nuget\\packages\\instana.tracing.core.rewriter.linux\\1.1.3\\instana.tracing.core.rewriter.linux.1.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
